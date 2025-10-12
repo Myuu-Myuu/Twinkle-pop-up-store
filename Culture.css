@@ -154,7 +154,8 @@ section {
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             gap: 10px;
-        }
+            
+             }
 .card{
                background: rgba(255, 255, 255, 0.1);
                padding: 25px;
@@ -162,10 +163,141 @@ section {
                border: 2px solid#fede8e;
                overflow: hidden;
                position: relative;
+                display: inline-block;
+                /* background-image: url('../assets/images/c5.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat; */
+                
+              
+}   
 
+.card img{
+	/* position: absolute; */
+	width: 100%;
+	/* height: 100%; */
+	/* object-fit: cover; */
+  margin-bottom: 15px;
 
-.card:hover{
-    font-size: large;
-    transform: translateY(-30px);
+  
 }
 
+.text{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  border-color: rgb(0, 0, 0, 0.6);
+  /* padding: 10px 20px; */
+  border-radius: 8px;
+}
+
+.abt{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 10px;
+
+}
+
+.two{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 20px;
+	margin-top: 80px;
+  display: grid;
+  
+}
+.two .face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: 1s;
+}
+.two .front{
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #000;
+}
+.two .front img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.two .front h2{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color:red;
+	text-align: center;
+}
+.two .back{
+	transform: perspective(600px) rotateY(180deg);
+	background: rgb(3,35,54);
+	padding: 15px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #000;
+}
+.two .back.link{
+	border-top: solid 1px #f3f3f3;
+	height: 50px;
+	line-height: 50px;
+}
+.back .link a{
+	color:white;
+}
+.two .back h3{
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.two .back p{
+	letter-spacing: 1px;
+}
+.two:hover .front{
+	transform: perspective(600px) rotateY(180deg);
+}
+.two:hover .back{
+	transform: perspective(600px) rotateY(360deg);
+}
+h1{
+	text-align: right;
+	margin-top: -370px;
+	color: brown;
+}
+.column b{
+	font-size: 50px;
+	letter-spacing: 0.1em;
+	
+	margin-left: 10px;
+}
+.column p{
+	margin-left: 25px;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	font-size: 20px;
+}
+.to{
+	display: flex;
+	text-align: center;
+}
+.backto {
+	width: 200px;
+	height: 100px;
+	box-sizing: border-box;
+}
+.backto a{
+	text-decoration: none;
+	color: blue;
+}
