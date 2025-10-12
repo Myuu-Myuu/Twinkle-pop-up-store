@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Twinkle:pop-up</title>
+
+    <link rel="stylesheet" href="Styles/main.css"/>
+    <link rel="stylesheet" href="Styles/delivery.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+    <!-- navbar -->
+<header>
+ <nav>
+    <div>
+        <a class="navbar-brand"><img src="./assets/images/Tinkle 2.svg"width="200" height="110" alt="" /> </a>
+     </div>
+
+    <div class="navbar">
+    <div class="nav-item active">
+     <a href="#"><i class="fa-solid fa-house"></i>
+      <span>Home</span></a>
+    </div>
+    <div class="nav-item">
+     <a href="#"> <i class="fa-solid fa-basket-shopping"></i>
+      <span>Products</span></a>
+    </div>
+    <div class="nav-item">
+      <a href="#"><i class="fa-solid fa-hand-holding-heart"></i>
+      <span>Whishes</span></a>
+    </div>
+    <div class="nav-item">
+     <a href="#"><i class="fa-solid fa-bookmark"></i>
+      <span>Culture</span></a>
+    </div>
+    <div class="nav-item">
+     <a href="#"><i class="fa-solid fa-truck"></i>
+      <span>Delivery</span></a>
+    </div>
+  </div>
+  <div>
+    <ul type="none">
+       <a href="#"> <li>Log-in</li></a>
+        <a href="#"><li>Sign-up</li></a>
+    </ul>
+</div>
+ </nav>
+</header>
+
+<!-- Main content -->
+ <main class="burmese-text">
+  <div class="container">
+
+    <!-- LEFT: Checkout Form -->
+    <section class="checkout-form">
+      <h2>ပေးပို့ခြင်းနှင့် ငွေပေးချေမှု</h2>
+      <div class="gold-line shimmer"></div>
+
+      <form class="form-grid" autocomplete="on">
+        <!-- Row: Phone and Email -->
+        <label class="form-row">
+          <span class="label">ဖုန်းနံပါတ် *</span>
+          <input type="tel" placeholder="09xxxxxxxx" required />
+        </label>
+
+        <label class="form-row">
+          <span class="label">အီးမေးလ်လိပ်စာ *</span>
+          <input type="email" placeholder="YOURNAME@GMAIL.COM" required />
+        </label>
+        
+        <!-- State / Region Dropdown -->
+<label class="form-row">
+  <span class="label">State / Region ပြည်နယ်*</span>
+  <select required>
+    <option>Yangon ရန်ကုန်</option>
+    <option>Mandalay မန္တလေး</option>
+    <option>Ayeyarwady အယေရဝတီ</option>
+    <option>Bago ပဲခူး</option>
+    <option>Magway မကွေး</option>
+    <option>Sagaing စစ်ကိုင်း</option>
+    <option>Tanintharyi တနင်္သာရီ</option>
+    <option>Kachin ကချင်</option>
+    <option>Kayah ကယား</option>
+    <option>Kayin ကရင်</option>
+    <option>Chin ချင်း</option>
+    <option>Mon မွန်</option>
+    <option>Rakhine ရခိုင်</option>
+    <option>Shan ရှမ်း</option>
+  </select>
+</label>
+
+<!-- Township Dropdown -->
+<label class="form-row">
+  <span class="label">Township မြို့နယ် *</span>
+  <select required>
+    <!-- Yangon -->
+    <option>Latha လသာ</option>
+    <option>Sanchaung စမ်းချောင်း</option>
+    <option>Hlaing လှိုင်</option>
+    <option>Kamayut ကမာရွတ်</option>
+    <option>Bahan ဗဟန်း</option>
+    <option>Insein အင်းစိန်</option>
+    <option>North Dagon မြောက်ဒဂုံ</option>
+    <option>South Dagon တောင်ဒဂုံ</option>
+    <option>Thingangyun သင်္ဃန်းကျွန်း</option>
+    <option>Dagon Seikkan ဒဂုံဆိပ်ကမ်း</option>
+    <option>Dala ဒလ</option>
+    <option>Mingaladon မင်္ဂလာတုံ</option>
+    <option>Tamwe တမ်เว</option>
+    <option>Mayangone မရမ်းကုန်း</option>
+
+    <!-- Mandalay -->
+    <option>Aungmyethazan အောင်မြေသာဇံ</option>
+    <option>Chanayethazan ချမ်းအေးသာဇံ</option>
+    <option>Maha Aungmye မဟာအောင်မြေ</option>
+    <option>Pyin Oo Lwin ပြင်ဦးလွင်</option>
+    <option>Patheingyi ပုသိမ်ကြီး</option>
+
+    <!-- Ayeyarwady -->
+    <option>Pathein ပုသိမ်</option>
+    <option>Myaungmya မြောင်းမြ</option>
+    <option>Hinthada ဟင်သာတ</option>
+    <option>Pyapon ပြပွန်း</option>
+    <option>Kangyidaunt ကန်ကြီးတောင့်</option>
+
+    <!-- Bago -->
+    <option>Bago ပဲခူး</option>
+    <option>Pyay ပြည်</option>
+    <option>Nyaunglebin ညောင်လဲဘင်</option>
+
+    <!-- Magway -->
+    <option>Magway မကွေး</option>
+    <option>Minbu မင်းဘူး</option>
+    <option>Pakokku ပခုက္ကူ</option>
+
+    <!-- Sagaing -->
+    <option>Monywa မုံရွာ</option>
+    <option>Kalay ကလေး</option>
+
+    <!-- Tanintharyi -->
+    <option>Myeik မြိတ်</option>
+    <option>Dawei ဒါဝါ</option>
+
+    <!-- Kachin -->
+    <option>Myitkyina မြစ်ကြီးနား</option>
+
+    <!-- Kayah -->
+    <option>Loikaw လွိုင်ကော်</option>
+
+    <!-- Kayin -->
+    <option>Kawkareik ကော့ကရိတ်</option>
+
+    <!-- Chin -->
+    <option>Hakha ဟားခါး</option>
+
+    <!-- Mon -->
+    <option>Mawlamyine မော်လမြိုင်</option>
+
+    <!-- Rakhine -->
+    <option>Sittwe စစ်တွေ</option>
+
+    <!-- Shan -->
+    <option>Taunggyi တောင်ကြီး</option>
+    <option>Kengtung ကျိုင်းတုံ</option>
+  </select>
+</label>
+
+        <!-- Street Address -->
+        <label class="form-row full">
+          <span class="label">လမ်းနာမည် *</span>
+          <input type="text" placeholder="အမှတ် (၁) ဘုရင့်နောင်လမ်း ..." required />
+        </label>
+
+        <!-- Divider -->
+        <div class="divider full">
+          အခြားလိပ်စာသို့ ပေးပို့ပါ။
+        </div>
+
+        <!-- Order Notes -->
+        <label class="form-row full">
+          <span class="label">အော်ဒါအတွက် မှတ်ချက် (Optional)</span>
+          <textarea placeholder="ပေးပို့မှုနှင့်ပတ်သက်သော ညွှန်ကြားချက်များ..."></textarea>
+        </label>
+      </form>
+    </section>
+
+    <!-- RIGHT: Order Summary -->
+    <aside class="order-summary">
+      <div class="summary-card">
+        <h3>Order Summary</h3>
+        <div class="gold-line shimmer"></div>
+
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong>MMK 0</strong>
+        </div>
+        <div class="summary-line small">
+          <span>ပေးပို့ခ</span>
+          <span class="muted">အခမဲ့</span>
+        </div>
+        <hr>
+        <div class="summary-line total">
+          <span>Total</span>
+          <strong>MMK 0</strong>
+        </div>
+
+        <!-- 💰 Payment Section -->
+        <div class="payment-section">
+  <h4>ငွေပေးချေမှု နည်းလမ်းရွေးချယ်ပါ</h4>
+
+  <!-- ✅ Credit/Debit Toggle -->
+  <input type="checkbox" id="credit-toggle" hidden>
+  <label class="radio-row" for="credit-toggle">
+    <span>Credit / Debit Card (ဘဏ်ကဒ်)</span>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.-PlB0LhE6VHd1nKIjqTMagHaHa?pid=Api&P=0&h=220" alt="Credit Card" />
+    <img src="https://logolook.net/wp-content/uploads/2021/07/Mastercard-Logo-2016.png" alt="Credit Card" />
+    <img src="https://tse1.mm.bing.net/th/id/OIP.w1FNX2QWUa9f2HNYLUW7SQHaCs?pid=Api&P=0&h=220" alt="Credit Card" />
+    <img src="https://w7.pngwing.com/pngs/394/642/png-transparent-finance-jcb-logo-payment-payment-method-icon.png" alt="Credit Card" />
+  </label>
+
+  <!-- 💳 Credit Suboptions -->
+  <div class="credit-suboptions">
+    <label><input type="radio" name="card-type"> Visa</label>
+    <label><input type="radio" name="card-type"> MasterCard</label>
+    <label><input type="radio" name="card-type"> MPU</label>
+    <label><input type="radio" name="card-type"> JCB</label>
+
+    <div class="card-form">
+      <label>Card Number ကဒ်နံပါတ်<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX"></label>
+      <label>Card Holder Name အမည်<input type="text" placeholder="Name on Card"></label>
+      <label>Expiry Date သက်တမ်းကုန်နေ့<input type="month"></label>
+      <label>CVV<input type="text" placeholder="123" maxlength="3"></label>
+    </div>
+  </div>
+
+  <!-- 💛 WavePay -->
+  <input type="checkbox" id="wavepay-toggle" hidden>
+  <label class="radio-row" for="wavepay-toggle">
+    <span>WavePay</span>
+    <img src="https://cdn6.aptoide.com/imgs/a/d/0/ad05b74cd5f80b55498d98a21368e43e_fgraphic.png" alt="WavePay" />
+  </label>
+
+  <div class="wavepay-form">
+    <p>WavePay ဖြင့် ငွေပေးချေမည်။</p>
+    <label>WavePay ဖုန်းနံပါတ်<input type="tel" placeholder="09xxxxxxxx"></label>
+    <label>အမည်<input type="text" placeholder="WavePay Account Name"></label>
+  </div>
+
+  <!-- 💛 KPay -->
+  <input type="checkbox" id="kpay-toggle" hidden>
+  <label class="radio-row" for="kpay-toggle">
+    <span>KPay</span>
+    <img src="https://www.kbzpay.com/wp-content/uploads/sites/9/2020/04/og_image_for_kbzpay.png" alt="KPay">
+  </label>
+
+  <div class="kpay-form">
+    <p>KPay ဖြင့် ငွေပေးချေမည်။</p>
+    <label>KPay ဖုန်းနံပါတ်
+      <input type="tel" placeholder="09xxxxxxxx">
+    </label>
+    <label>အမည်
+      <input type="text" placeholder="KPay Account Name">
+    </label>
+  </div>
+</div>
+
+        <button class="checkout-btn">အော်ဒါတင်မည်</button>
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+ <!-- Footer -->
+  <footer>
+    <section class="footer">
+      <div class="footer-content">
+        
+        <img src="./assets/images/Tinkle 5.svg" width="150" height="110" alt="">
+        <p style="line-height: initial;">Your festival, your twinkle</p> 
+        <p style="line-height: initial;">Glow with the festival spirit</p> 
+      </div>
+      <div class="footer-content">
+       
+          <h2 style="text-align: center;">Links</h2>
+          <ul> 
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Culture</a></li>
+         <li><a href="#">Delivery</a></li>
+          <li><a href="#">Wishes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+        <h2 style="text-align: center;">Hours</h2>
+        <ul>
+          <li>Mon to Sat:9AM-3PM</li>
+          <li>Sun:Closed</li>
+          <li>On ground:</li>
+          <li>1.10.2025 to 18.10.2025</li>
+      </ul>
+      </div>
+      <div class="footer-content">
+        <h2 style="text-align: center;">Contact</h2>
+        <ul>        
+          <li><i class="fa-solid fa-location-dot"></i>    Yangon</li>
+          <li><i class="fa-solid fa-phone"></i>         +95 123456789</li>
+          <li><i class="fa-brands fa-telegram"></i>     @twinkle-123</li>
+         <li><i class="fa-solid fa-envelope"></i>       twinkle@example.com</li>
+        </ul>
+      </div>
+    </section>
+     <p style="text-align: center;">&copy;2025 Twinkle:pop-up store</p>
+    <section>
+
+    </section>
+  </footer>
+    
+
+</body>
+</html>
