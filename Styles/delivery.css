@@ -1,0 +1,222 @@
+body {
+  font-family: "Noto Sans Myanmar", sans-serif;
+  background: #fdfaf5;
+  color: #3d2b1f;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.checkout-form, .order-summary {
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gold-line {
+  border-top: 3px solid gold;
+  margin: 10px 0 20px;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-row {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row.full {
+  flex: 1 1 100%;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea, input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.divider {
+  text-align: center;
+  color: #795548;
+  margin: 25px 0;
+  border-top: 2px solid gold;
+  padding-top: 8px;
+}
+
+.summary-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Payment Section */
+.payment-section {
+  margin-top: 20px;
+}
+
+/* Payment row styling */
+.radio-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.radio-row:hover {
+  background: #fff5cc;
+  transform: scale(1.01);
+}
+
+/* Payment logos consistent size */
+.payment-section img {
+  width: 45px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.radio-row:hover img {
+  transform: scale(1.08);
+}
+
+/* Card input grid */
+.card-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+/* Checkout button */
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  background: #f5b700;
+  border: none;
+  border-radius: 10px;
+  color: #3d2b1f;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.checkout-btn:hover {
+  background: #ffcc33;
+  transform: translateY(-2px);
+}
+
+/* Hidden payment sub-forms by default */
+.credit-suboptions,
+.wavepay-form,
+.kpay-form {
+  display: none;
+  background: #fffaf0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Show only when selected */
+#credit-toggle:checked ~ .credit-suboptions {
+  display: block;
+}
+
+#wavepay-toggle:checked ~ .wavepay-form {
+  display: block;
+}
+
+#kpay-toggle:checked ~ .kpay-form {
+  display: block;
+}
+
+/* WavePay & KPay form styling */
+.wavepay-form label,
+.kpay-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3d2b1f;
+}
+
+.wavepay-form input,
+.kpay-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.wavepay-form p,
+.kpay-form p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #5c4033;
+}
+
+/* Payment label text */
+.radio-row span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3d2b1f;
+}
+
+/* Highlight selected payment */
+#credit-toggle:checked + label.radio-row,
+#wavepay-toggle:checked + label.radio-row,
+#kpay-toggle:checked + label.radio-row {
+  border: 2px solid gold;
+  background: #fff4cc;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+  transform: scale(1.02);
+}
