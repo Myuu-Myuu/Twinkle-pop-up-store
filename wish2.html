@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: "CrimsonText";
+            src: url(../assets/fonts/CrimsonText-Regular.ttf) format(truetype);
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: block;
+            font-named-instance: "Regular";
+        }
+
+        @font-face {
+            font-family: "MyanmarGrand";
+            src: url(../assets/fonts/MyanmarGrand.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+
+        }
+
+        h1 {
+            font-family: "MyanmarGrand", "CrimsonText", serif !important;
+            color: #FFB700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+            font-size: 30px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-main: #1a1a40;
+            --footer: #030325;
+            --text: #FFB700;
+            --nav-height: 70px;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        nav {
+            background-color: var(--footer);
+            width: 100%;
+            height: 70px;
+            display: flex;
+            /* position:fixed; */
+            gap: 150px;
+
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .nav-item:hover {
+            color: #FFB700;
+            text-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
+            ;
+            cursor: pointer;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #e6ad1c;
+        }
+
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+            color: #aaa;
+            font-size: 17px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: #e6ad1c;
+            font-size: 17px;
+
+        }
+
+        nav ul a:hover {
+            color: #FFB700;
+            text-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
+            ;
+            cursor: pointer;
+        }
+
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            height: 200px;
+            background-color: var(--footer);
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .footer .footer-content img {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .footer .footer-content ul {
+            text-align: center;
+            list-style-type: none;
+
+
+        }
+
+        .footer .footer-content ul li a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .footer .footer-content ul li:hover {
+            color: #FFB700;
+            text-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
+            ;
+
+        }
+
+        .stars {
+            height: 2.5px;
+            width: 2.5px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+
+            animation: twinkle 5s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+        }
+
+        .wish-letter {
+            height: 56vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            animation: float 3s ease-in-out infinite alternate;
+        }
+
+        .design {
+            width: 700px;
+            height: 200px;
+            font-size: 20px;
+            background-color: rgb(243, 232, 170);
+            box-shadow: 0 0 20px rgb(221, 182, 74);
+            border-radius: 20px;
+            position: absolute;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design::before{
+            content: '';
+            width: 70px;
+            height: 230px;
+            border-radius: 20px;
+            background-color: rgb(243, 232, 170);
+            box-shadow: 0 0 20px rgb(221, 182, 74);
+
+            position: absolute;
+            right:-60px;
+        }
+
+        .design::after{
+            content: '';
+            width: 70px;
+            height: 230px;
+            border-radius: 20px;
+            background-color: rgb(243, 232, 170);
+            box-shadow: 0 0 20px rgb(221, 182, 74);
+
+            position: absolute;
+            left:-60px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a class="navbar-brand"><img src="./assets/images/Tinkle 2.svg" width="200" height="110" alt="" /> </a>
+            </div>
+
+            <div class="navbar">
+                <div class="nav-item active">
+                    <a href="#"><i class="fa-solid fa-house"></i>
+                        <span>Home</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#"> <i class="fa-solid fa-basket-shopping"></i>
+                        <span>Products</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-hand-holding-heart"></i>
+                        <span>Whishes</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-bookmark"></i>
+                        <span>Culture</span></a>
+                </div>
+                <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-truck"></i>
+                        <span>Delivery</span></a>
+                </div>
+            </div>
+            <div>
+                <ul type="none">
+                    <a href="#">
+                        <li>Log-in</li>
+                    </a>
+                    <a href="#">
+                        <li>Sign-up</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="stars" style="right: 80px; top: 150px; animation-duration: 3s;"></div>
+        <div class="stars" style="right: 400px; top: 100px; animation-duration: 1s;"></div>
+        <div class="stars" style="right: 160px; top: 200px; animation-duration: 1.5s;"></div>
+        <div class="stars" style="right: 600px; top: 180px; animation-duration: 4s;"></div>
+        <div class="stars" style="right: 130px; top: 350px; animation-duration: 5s;"></div>
+        <div class="stars" style="right: 440px; top: 280px; animation-duration: 2s;"></div>
+        <div class="stars" style="right: 525px; top: 380px; animation-duration: 1.2s;"></div>
+        <div class="stars" style="right: 300px; top: 250px; animation-duration: 3.5s;"></div>
+        <div class="stars" style="right: 300px; top: 450px; animation-duration: 2.3s;"></div>
+        <div class="stars" style="right: 50px; top: 500px; animation-duration: 4.5s;"></div>
+        <div class="stars" style="left: 80px; top: 150px; animation-duration: 4s;"></div>
+        <div class="stars" style="left: 400px; top: 100px; animation-duration: 0.5s;"></div>
+        <div class="stars" style="left: 160px; top: 200px; animation-duration: 2s;"></div>
+        <div class="stars" style="left: 600px; top: 225px; animation-duration: 5s;"></div>
+        <div class="stars" style="left: 130px; top: 350px; animation-duration: 3.1s;"></div>
+        <div class="stars" style="left: 440px; top: 280px; animation-duration: 4.2s;"></div>
+        <div class="stars" style="left: 525px; top: 380px; animation-duration: 2.2s;"></div>
+        <div class="stars" style="left: 300px; top: 250px; animation-duration: 3.7s;"></div>
+        <div class="stars" style="left: 50px; top: 500px; animation-duration: 1.8s;"></div>
+
+        <div class="wish-letter">
+            <div class="design">
+                <h1>ဘေးအန္တရာယ်ကင်းဝေးပါစေ</h1>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-content">
+
+                <img src="./assets/images/Tinkle 5.svg" width="150" height="110" alt="">
+                <p style="line-height: initial;">Your festival, your twinkle</p>
+                <p style="line-height: initial;">Glow with the festival spirit</p>
+            </div>
+            <div class="footer-content">
+
+                <h2 style="text-align: center;">Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Wishes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h2 style="text-align: center;">Hours</h2>
+                <ul>
+                    <li>Mon to Sat:9AM-3PM</li>
+                    <li>Sun:Closed</li>
+                    <li>On ground:</li>
+                    <li>1.10.2025 to 18.10.2025</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2 style="text-align: center;">Contact</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Yangon</li>
+                    <li><i class="fa-solid fa-phone"></i> +95 123456789</li>
+                    <li><i class="fa-brands fa-telegram"></i> @twinkle-123</li>
+                    <li><i class="fa-solid fa-envelope"></i> twinkle@example.com</li>
+                </ul>
+            </div>
+        </section>
+        <p style="text-align: center;">&copy;2025 Twinkle:pop-up store</p>
+        <section>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
