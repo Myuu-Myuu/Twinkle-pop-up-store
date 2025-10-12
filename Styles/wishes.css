@@ -1,0 +1,169 @@
+h1,p {
+    font-family: Georgia;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+
+h1{
+    margin-top: 50px;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+#Welcome{
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+#p1{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#p2{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#p3{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.wish{
+    width: 100%;
+}
+
+/* candle */
+.candle {
+    height: 200px;
+    width: 60px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 49%;
+    margin-bottom: 5px;
+}
+
+.flame {
+    height: 50px;
+    width: 30px;
+    border:1px solid gray;
+    box-shadow: 0 0 20px gray;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+#light{
+    display: none;
+}
+
+#light:checked ~ .lights label .flame{
+    background-color: orangered;
+    border:1px solid rgb(236, 95, 43);
+    box-shadow: 0 0 20px rgb(206, 113, 79);
+
+    animation: flamy 1.8s infinite alternate;
+}
+
+#light:checked ~ .candle {
+    box-shadow: 0 0 10px rgb(252, 174, 130);
+}
+
+/* Happy Thidingyut */
+.happy {
+    top: 600px;
+    left: 37%;
+}
+
+/* cards */
+.wish-cards{
+    width: 100%;
+    margin-bottom: 25px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wish-cards .cards .card {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(243, 232, 170);
+    box-shadow: 0 0 20px rgb(221, 182, 74);
+    margin:30px 0px 0px 50px;
+    border-radius: 20px;
+    padding-top: 70px;
+
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+.wish-reveal{
+    display: none;
+}
+
+#light:checked ~ .wish-reveal {
+    display: block;
+}
+
+.stars{
+    height: 2.5px;
+    width: 2.5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+
+    animation: twinkle 2s infinite alternate;
+}
+
+a{
+    text-decoration: none;
+}
+
+.message{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    color:  rgb(201, 190, 134);
+    text-shadow: none;
+    opacity: 0.4;
+}
+
+@keyframes twinkle{
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes flamy{
+    0%{
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
