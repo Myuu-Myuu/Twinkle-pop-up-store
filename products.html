@@ -1,105 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home-Twinkle:pop-up</title>
 
-    <link rel="stylesheet" href="Styles/main.css"/>
-    <link rel="stylesheet" href="Styles/products.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-     
-</head>
-<body>
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- navbar -->
-<header>
- <nav>
-    <div>
-        <a class="navbar-brand"><img src="./assets/images/Tinkle 2.svg"width="200" height="110" alt="" /> </a>
-     </div>
+    <header>
+      <nav>
+        <div>
+          <a class="navbar-brand"
+            ><img
+              src="./assets/images/Tinkle 2.svg"
+              width="200"
+              height="110"
+              alt=""
+            />
+          </a>
+        </div>
 
-    <div class="navbar">
-    <div class="nav-item active">
-     <a href="#"><i class="fa-solid fa-house"></i>
-      <span>Home</span></a>
-    </div>
-    <div class="nav-item">
-     <a href="#"> <i class="fa-solid fa-basket-shopping"></i>
-      <span>Products</span></a>
-    </div>
-    <div class="nav-item">
-      <a href="#"><i class="fa-solid fa-hand-holding-heart"></i>
-      <span>Whishes</span></a>
-    </div>
-    <div class="nav-item">
-     <a href="#"><i class="fa-solid fa-bookmark"></i>
-      <span>Culture</span></a>
-    </div>
-    <div class="nav-item">
-     <a href="#"><i class="fa-solid fa-truck"></i>
-      <span>Delivery</span></a>
-    </div>
-  </div>
-  <div>
-    <ul type="none">
-       <a href="#"> <li>Log-in</li></a>
-        <a href="#"><li>Sign-up</li></a>
-    </ul>
-</div>
- </nav>
-</header>
-<!-- Main content -->
-<main>
- <section></section>
-  </main>
- 
- <!-- Footer -->
-  <footer>
-    <section class="footer">
-      <div class="footer-content">
-        
-        <img src="./assets/images/Tinkle 5.svg" width="150" height="110" alt="">
-        <p style="line-height: initial;">Your festival, your twinkle</p> 
-        <p style="line-height: initial;">Glow with the festival spirit</p> 
-      </div>
-      <div class="footer-content">
-       
-          <h2 style="text-align: center;">Links</h2>
-          <ul> 
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Culture</a></li>
-         <li><a href="#">Delivery</a></li>
-          <li><a href="#">Wishes</a></li>
-        </ul>
-      </div>
+        <div class="navbar">
+          <div class="nav-item active">
+            <a href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+          </div>
+          <div class="nav-item">
+            <a href="#">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <span>Products</span></a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="#"
+              ><i class="fa-solid fa-hand-holding-heart"></i>
+              <span>Whishes</span></a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="#"
+              ><i class="fa-solid fa-bookmark"></i> <span>Culture</span></a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="#"
+              ><i class="fa-solid fa-truck"></i> <span>Delivery</span></a
+            >
+          </div>
+        </div>
+        <div>
+          <ul type="none">
+            <a href="#"> <li>Log-in</li></a>
+            <a href="#"><li>Sign-up</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main class="burmese-text">
+      <!-- first content -->
+      <h1 style="text-align: center">Products</h1>
+      <section class="main-content">
+        <div class="tabs">
+          <a href="#lights" class="tab-btn">Lights & Lanterns</a>
+          <a href="#gifts" class="tab-btn">Gift & Offerings</a>
+          <a href="#coupon" class="tab-btn">Coupon</a>
+        </div>
+        <!-- lights card -->
+        <h2 style="text-align: center" id="lights">Lights & Lanterns</h2>
+        <div class="tab-content">
+          <div class="card">
+            <img src="/assets/images/lights1.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>မီးသီးကြိုး</h3>
+              <p>၇၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
 
-      <div class="footer-content">
-        <h2 style="text-align: center;">Hours</h2>
-        <ul>
-          <li>Mon to Sat:9AM-3PM</li>
-          <li>Sun:Closed</li>
-          <li>On ground:</li>
-          <li>1.10.2025 to 18.10.2025</li>
-      </ul>
-      </div>
-      <div class="footer-content">
-        <h2 style="text-align: center;">Contact</h2>
-        <ul>        
-          <li><i class="fa-solid fa-location-dot"></i>    Yangon</li>
-          <li><i class="fa-solid fa-phone"></i>       +95 123456789</li>
-          <li><i class="fa-brands fa-telegram"></i>     @twinkle-123</li>
-         <li><i class="fa-solid fa-envelope"></i>       twinkle@example.com</li>
-        </ul>
-      </div>
-    </section>
-     <p style="text-align: center;">&copy;2025 Twinkle:pop-up store</p>
-    <section>
+          <div class="card">
+            <img src="/assets/images/Lights2.svg" alt="lights" />
+            <div class="card-content">
+              <h3>အလှမီးသီး</h3>
+              <p>၇၅၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
 
-    </section>
-  </footer>
-    
+          <div class="card">
+            <img src="/assets/images/oilcandle.svg" alt="oilcandle" />
+            <div class="card-content">
+              <h3>ဆီမီး</h3>
+              <p>၂၅၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
 
-</body>
+          <div class="card">
+            <img src="/assets/images/lantern1.svg" alt="lantern" />
+            <div class="card-content">
+              <h3>မီးပုံး</h3>
+              <p>၅၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/lantern2.svg" alt="lantern" />
+            <div class="card-content">
+              <h3>ကြယ်ပုံစံမီးပုံး</h3>
+              <p>၅၅၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/lantern3.svg" alt="lantern" />
+            <div class="card-content">
+              <h3>အလှမီးပုံး</h3>
+              <p>၅၅၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/lantern4.svg" alt="lantern" />
+            <div class="card-content">
+              <h3>အလှမီးပုံး</h3>
+              <p>၅၅၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/firework1.svg" alt="firework" />
+            <div class="card-content">
+              <h3>မီးရှုးမီးပန်း</h3>
+              <p>၇၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/firework2.svg" alt="firework" />
+            <div class="card-content">
+              <h3>ကြယ်မီးပန်း</h3>
+              <p>၃၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+        </div>
+        <!-- Gift cards -->
+        <h2 style="text-align: center" id="gifts">Gift & Offerings</h2>
+        <div class="tab-content">
+          <div class="card">
+            <img src="/assets/images/ovaltine3.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>အိုဗာတင်း</h3>
+              <p>၂၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/gift1.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကန်တော့ခြင်း</h3>
+              <p>၁၅၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/gift2.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကန်တော့ခြင်း</h3>
+              <p>၁၀၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/gift3.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကန်တော့ခြင်း</h3>
+              <p>၈၅,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/gift4.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>Top Gift set</h3>
+              <p>၃၅,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/gift5.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ဆေးအစုံခြင်း</h3>
+              <p>၂၃,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+        </div>
+        <!-- Postcard card -->
+        <h2 style="text-align: center" id="coupon">Coupon</h2>
+        <div class="tab-content">
+          <div class="card">
+            <img src="/assets/images/coupon1.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကူပွန်၁၅%လက်ဆောင်</h3>
+              <p>၅၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/coupon2.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကူပွန်၃၅%လက်ဆောင်</h3>
+              <p>၁၀၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/coupon3.svg" alt="Lights" />
+            <div class="card-content">
+              <h3>ကူပွန်၅၀%လက်ဆောင်</h3>
+              <p>၁၅၀,၀၀၀ကျပ်</p>
+              <button class="button">ပိုမိုကြည့်ရှု့ရန်</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second content -->
+      <br />
+      <hr />
+      <br />
+      <section class="second">
+        <h1>Special for Thadingyut</h1>
+        <div class="second-content">
+          <img src="/assets/images/coupongift.svg" alt="image" />
+          <div>
+            <h2>သီတင်းကျွတ်ပရိုမိုးရှင်း</h2>
+            <p>
+              ကူပွန်တစ်ဆောင်ဝယ်ပြီး ကြိုက်နှစ်သက်ရာမီးပုံးတစ်ခုလက်ဆောင်ယူလိုက်ပါ
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer">
+        <div class="footer-content">
+          <img
+            src="./assets/images/Tinkle 5.svg"
+            width="150"
+            height="110"
+            alt=""
+          />
+          <p style="line-height: initial">Your festival, your twinkle</p>
+          <p style="line-height: initial">Glow with the festival spirit</p>
+        </div>
+        <div class="footer-content">
+          <h2 style="text-align: center">Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Wishes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h2 style="text-align: center">Hours</h2>
+          <ul>
+            <li>Mon to Sat:9AM-3PM</li>
+            <li>Sun:Closed</li>
+            <li>On ground:</li>
+            <li>1.10.2025 to 18.10.2025</li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h2 style="text-align: center">Contact</h2>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Yangon</li>
+            <li><i class="fa-solid fa-phone"></i> +95 123456789</li>
+            <li><i class="fa-brands fa-telegram"></i> @twinkle-123</li>
+            <li><i class="fa-solid fa-envelope"></i> twinkle@example.com</li>
+          </ul>
+        </div>
+      </section>
+      <p style="text-align: center">&copy;2025 Twinkle:pop-up store</p>
+      
+    </footer>
+  </body>
 </html>
