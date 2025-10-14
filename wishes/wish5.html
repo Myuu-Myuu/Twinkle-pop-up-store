@@ -268,25 +268,41 @@
             }
 
             .star-section {
-                width: auto;
+                width: 100%;
             }
 
             .design {
-                width: auto;
+                width: 90vw;
+                min-width: 220px;
+                max-width: 70vw;
+                height: auto;
+                min-height: 120px;
+                padding: 10px 0;
+            }
+
+            .design::before, .design::after {
+                width: 12vw;
+                min-width: 30px;
+                max-width: 50px;
+                height: 130px;
+                min-height: 130px;
+                max-height: 180px;
+                
             }
 
             .design::before {
-                width: auto;
+                right: -5vw;
             }
 
             .design::after {
-                width: auto;
+                left: -5vw;
             }
 
             h1 {
-                font-size: 28px;
+                font-size: 22px;
+                text-align: center;
+                padding: 0 30px;
             }
-
         }
     </style>
 </head>
