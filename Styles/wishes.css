@@ -84,6 +84,7 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .wish-cards .cards .card {
@@ -106,12 +107,17 @@ h1{
     display: block;
 }
 
+.star-section {
+    width: 100%;
+}
 .stars{
-    height: 2.5px;
-    width: 2.5px;
+    min-height: 2.5px;
+    min-width: 2.5px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
+    /* display: flex;
+    flex-wrap: wrap; */
 
     animation: twinkle 2s infinite alternate;
 }
@@ -166,7 +172,6 @@ a{
         transform: translateY(0);
     }
 }
-
 @media (max-width: 768px) {
     h1 {
         font-size: 28px;
@@ -188,12 +193,14 @@ a{
     .flame {
         height: 35px;
         width: 20px;
-        margin-left: 46.5%;
+        margin-left: 46.7%;
         margin-top: 80px;
     }
-
+    .wish-cards{
+        width: auto;
+    }
     .wish-cards .cards .card {
-        width: 90%;
+        width: auto;
         height: auto;
         padding: 40px 20px;
         margin: 15px;
@@ -206,4 +213,13 @@ a{
     .message {
         font-size: 14px;
     }
+ 
+    .stars{
+        width: 2px;
+        height: 2px;
+    } 
+    
+     .star-section {
+        width: auto;
+     }
 }
