@@ -1,6 +1,6 @@
 .welcome{
     width: auto;
-    height: 400px;
+     min-height: 400px;
     /* background-color: gold; */
     text-align: center; 
     display: flex;
@@ -12,7 +12,7 @@
 .welcome-message{
     margin-top: 20px;
     width: 800px;
-    height: 340px;
+    min-height: 340px;
      border-radius: 50px;
       border: 1px solid gold;
       background-color: var(--footer);
@@ -45,7 +45,6 @@
 
 .homeput{
     margin-top: 50px;
-    width: 100%;
     width: auto;
     display: flex;
     justify-content: center;
@@ -53,7 +52,7 @@
 }
 .homeput .prod{
     width:90%;
-    height: 500px;
+    min-height: 500px;
     background-color:#04045496;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -65,7 +64,7 @@
 
 .homeput .upper{
     width: 100%;
-    height: 95px;
+    min-height: 95px;
     background-color: var(--footer);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px; 
@@ -87,11 +86,12 @@
 .homeput .lower{
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .homeput .lower .lw-card{
-    width: 23%;
-    height: 350px;
+    width: fit-content;
+    min-height: 350px;
     border: 1px solid gold;
     margin-top: 20px;
     border-radius: 20px;
@@ -136,23 +136,25 @@ transform: scale(1.3);
     color: var(--footer);
 }
 
-/* Home culture */
-.culture{
-    margin: 20px;
+ /* Home culture */
+     .culture{
+    margin: 20px auto 50px auto; 
     display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-  
     
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px; 
 }
 
 .culture img{
     width: 350px;
     height: 250px;
     object-fit: cover;
-    margin-left: 25px;
-   border-radius: 20px;
-   border: 1px solid gold;
+   
+    border-radius: 20px;
+    border: 1px solid gold;
 }
 .culture .btn{
     border: 1px solid var(--bg-main);
@@ -161,8 +163,10 @@ transform: scale(1.3);
     background-color: gold;
     text-decoration: none;
     color: var(--footer);
-    margin-left: 500px;
-    transition: transform 1s;
+    margin: 30px auto 0 auto;
+    display: block; 
+    width: fit-content;
+    transition: transform 0.5s;
 }
 
 .culture .btn:hover{
@@ -173,39 +177,33 @@ transform: scale(1.3);
 
 .cul{
     position: relative;
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .cul:hover{
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-
 .cul .cul-effect:hover {
-        opacity: 1;
-     
-      }
-      .cul .cul-effect{
-        width: 350px;
-        height: 250px;
-        background-color: rgb(0, 0, 0, 0.5);
+    opacity: 1;
+}
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 20px;
-        padding-left: 10px; 
-
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        opacity: 0;
-
-        transition: all 0.3s;
-       
-      } 
+.cul .cul-effect{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px; 
+    position: absolute;
+    top: 0;
+    left: 0; 
+    opacity: 0;
+    transition: all 0.5s;
+}    
 
 /* Home Delivery */
 
@@ -230,16 +228,17 @@ transform: scale(1.3);
 }
 
 /* home wishes */
+
 .home-wis{
     width: 100%;
-    height: auto;
     height: fit-content;
     margin-top: 80px;
     display: flex;
-   
+    justify-content: space-around;
+    align-items: center;
 }
 .home-wis .wis-text{
-    width: 600px;
+    min-width: 40%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -253,34 +252,56 @@ transform: scale(1.3);
     background-color: var(--footer);
     text-decoration: none;
     color: gold;
-     transition: transform 1s;
-
+    transition: transform 0.5s;
+    width: fit-content; 
+    align-self: flex-start; 
 }
-
 
 .home-wis .btn:hover{
     color: var(--footer);
     background-color: gold;
     transform: scale(1.05);
-
 }
 
 .wish-text{
     margin-top: 40px;
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
-    margin-left: 80px;
-    /* background-color: aliceblue; */
+    
+    justify-content: center;
+    flex-grow: 1; 
 }
 
 .wish-sec{ 
     width: 200px;
     height: 100px;
     background-color: gold;
-    margin: 30px;
+    margin: 15px; 
     box-shadow: 0 20px 40px rgba(237, 245, 16, 0.279);
-     animation: home-wish 5s ease-in-out infinite forwards;
+    animation: home-wish 5s ease-in-out infinite forwards;
 }
+
+@keyframes home-wish{
+    25%{
+        transform: translateX(10px) translateY(0px);
+    }
+    50%{ 
+        transform: translateX(0px) translateY(-10px);
+    }
+    75%{
+        transform: translateX(-10px) translateY(0px);
+    }
+    100%{ 
+        transform: translateX(0px) translateY(10px);
+    }
+}
+
+.wish-sec p{
+    color: var(--footer);
+    text-align: center;
+    line-height: 100px;
+}
+
 @keyframes home-wish{
     25%{
          transform: translateX(10px);
@@ -332,3 +353,18 @@ transform: scale(1.3);
   }
 }
 
+@media screen and (max-width:768px) {
+    .welcome-message{
+        margin: 30px;
+        padding: 20px;
+
+    }
+    .lower{
+        padding-bottom: 20px;
+    }
+    .home-wis{
+        flex-direction: column;
+    }
+
+    
+}
