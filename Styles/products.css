@@ -43,6 +43,8 @@
     flex-wrap: wrap;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-left: 10px;
+    width: 100%;
+ 
     
    
 }
@@ -56,7 +58,7 @@
     margin: 10px;
 } 
  .tab-content .card{
-    min-width: 200px;
+    min-width: 30%;
     height: fit-content;
    background: rgba(255, 255, 255, 0.02);
    box-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
@@ -64,6 +66,7 @@
     margin: 25px;
     display: flex;
     flex-direction: row; 
+    
      
 }
 .tab-content .card:hover{
