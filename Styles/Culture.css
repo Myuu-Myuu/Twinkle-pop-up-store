@@ -1,14 +1,19 @@
 
  /* culture */
-   main {
-     margin-top: 0px;
-     margin-left: 80px;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+    main {
+       margin-top: 0px;
+     margin-left: 50px;
      padding-bottom: 60px;
-   }
+    }
+     
 
    section {
      padding: 80px 0;
-
+    
 
    }
 
@@ -39,7 +44,7 @@
    }
 
    .cd {
-     width: 300px;
+     width:300px;
      height: 500px;
      border-radius: 16px;
      overflow: hidden;
@@ -48,7 +53,7 @@
      cursor: pointer;
      /* border: 2px solid#fede8e; */
      box-shadow: 6px 5px 15px 5px #d99f0b;
-     margin: 42px;
+     margin: 40px;
 
    }
 

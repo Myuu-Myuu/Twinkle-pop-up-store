@@ -140,4 +140,8 @@ body:not(.vav,.footer){
   
 }
    
-  
+@media (min-width:768px){
+  body{
+    width: auto;
+  }
+}  
