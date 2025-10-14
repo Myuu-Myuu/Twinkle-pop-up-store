@@ -158,3 +158,53 @@
    .c-image:hover img {
      transform: scale(1.05);
    }
+
+   @media (max-width: 576px) {
+    /* Main Content */
+    main {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    section {
+        padding: 40px 0;
+    }
+
+    .heading {
+        font-size: 24px;
+        letter-spacing: 2px;
+        animation: td 1.5s ease-in-out infinite; /* Slightly faster animation */
+    }
+    
+    @keyframes td {
+        50% { transform: translateX(15px); } /* Reduced movement */
+    }
+
+    /* Card Grid: 1 card per row */
+    .cg {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 0 10px;
+    }
+
+    .cd {
+        height: 350px; /* Further reduced card height */
+        width: 90%; /* Use high percentage width to look centered */
+        max-width: 400px;
+        margin: 15px auto; /* Reintroduce auto margin to center the card */
+    }
+
+    /* Culture Section: Stack content */
+    .culture {
+        flex-direction: column; /* Stacks image and text vertically */
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .st, .c-image {
+        flex: 1 1 100%; /* Take full width */
+        min-width: 100%;
+    }
+    
+    .c-image img:hover {
+        transform: none; /* Disable transform on mobile to prevent accidental scaling */
+    }
+}
