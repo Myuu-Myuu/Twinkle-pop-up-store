@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "CrimsonText", serif;
+  font-family: "MyanmarGrand","CrimsonText", serif;
   color: #FFB700;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
 }
@@ -140,4 +140,8 @@ body:not(.vav,.footer){
   
 }
    
-  
+@media (min-width:768px){
+  body{
+    width: auto;
+  }
+}  

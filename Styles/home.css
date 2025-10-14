@@ -1,0 +1,334 @@
+.welcome{
+    width: auto;
+    height: 400px;
+    /* background-color: gold; */
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.welcome-message{
+    margin-top: 20px;
+    width: 800px;
+    height: 340px;
+     border-radius: 50px;
+      border: 1px solid gold;
+      background-color: var(--footer);
+
+     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+
+
+.welcome-message img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;   
+}
+.text{
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: glow 4s ease infinite,slide 4s ease-in-out infinite forwards;
+}
+ @keyframes glow{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+ }
+/* Home-products */
+
+.homeput{
+    margin-top: 50px;
+    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.homeput .prod{
+    width:90%;
+    height: 500px;
+    background-color:#04045496;
+    border-radius: 20px;
+    margin-bottom: 50px;
+   border: 1px solid gold;
+   
+   box-shadow: 0 10px 10px #08083a50 ;
+  transition: box-shadow 0.3s ease;
+}
+
+.homeput .upper{
+    width: 100%;
+    height: 95px;
+    background-color: var(--footer);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
+    text-align: center;
+}
+.upper a{
+    border: 1px solid gold;
+    text-decoration: none;
+    color: var(--text);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.upper a:hover{
+    color: var(--footer);
+    background: gold;
+}
+.homeput .lower{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.homeput .lower .lw-card{
+    width: 23%;
+    height: 350px;
+    border: 1px solid gold;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.lw-card h3{
+    text-align: center;
+}
+.lw-card p{
+    text-align: center;
+}
+.lw-card img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    transition: transform 1s;
+    border-radius: 10px;
+
+}
+
+.lw-card img:hover{
+transform: scale(1.3);
+}
+
+.lw-card .lw-btn{
+    border-color: transparent;
+    border: 1px solid gold;
+    padding: 3px 4px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+
+.lw-card .lw-btn:hover{
+    background-color: #D98324;
+    color: var(--footer);
+}
+
+/* Home culture */
+.culture{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+  
+    
+}
+
+.culture img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 25px;
+   border-radius: 20px;
+   border: 1px solid gold;
+}
+.culture .btn{
+    border: 1px solid var(--bg-main);
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: gold;
+    text-decoration: none;
+    color: var(--footer);
+    margin-left: 500px;
+    transition: transform 1s;
+}
+
+.culture .btn:hover{
+    color: gold;
+    background-color: var(--footer);
+    transform: scale(1.05);
+}
+
+.cul{
+    position: relative;
+    transition: transform 1s;
+}
+
+.cul:hover{
+  transform: scale(1.05);
+}
+
+
+.cul .cul-effect:hover {
+        opacity: 1;
+     
+      }
+      .cul .cul-effect{
+        width: 350px;
+        height: 250px;
+        background-color: rgb(0, 0, 0, 0.5);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        padding-left: 10px; 
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        opacity: 0;
+
+        transition: all 0.3s;
+       
+      } 
+
+/* Home Delivery */
+
+.deli{
+    margin-top: 80px;
+    height: fit-content;
+    display: flex;
+}
+
+.deli .deli-text{
+    width: 70%;
+    height: auto;
+    margin: 30px;
+}
+.deli a,
+.home-wis img{
+    transition: transform 1s;
+}
+.deli a:hover,
+.home-wis img:hover{
+    transform: scale(1.05);
+}
+
+/* home wishes */
+.home-wis{
+    width: 100%;
+    height: auto;
+    height: fit-content;
+    margin-top: 80px;
+    display: flex;
+   
+}
+.home-wis .wis-text{
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.home-wis .btn{
+    border: 1px solid gold;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background-color: var(--footer);
+    text-decoration: none;
+    color: gold;
+     transition: transform 1s;
+
+}
+
+
+.home-wis .btn:hover{
+    color: var(--footer);
+    background-color: gold;
+    transform: scale(1.05);
+
+}
+
+.wish-text{
+    margin-top: 40px;
+   display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    /* background-color: aliceblue; */
+}
+
+.wish-sec{ 
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+    margin: 30px;
+    box-shadow: 0 20px 40px rgba(237, 245, 16, 0.279);
+     animation: home-wish 5s ease-in-out infinite forwards;
+}
+@keyframes home-wish{
+    25%{
+         transform: translateX(10px);
+         
+    }
+    50%{ transform: translateX(0px);
+        transform:translateY(-10px);
+    }
+    100%{ transform: translateX(-10px);
+        transform: translateY(0px);
+    }
+}
+
+.wish-sec p{
+    color: var(--footer);
+    text-align: center;
+    line-height: 100px;
+}
+
+/* About us*/
+
+.about{
+    margin: 40px;
+    text-align: center;
+}
+
+.thankyou{
+  color: gold;
+  padding: 0.75rem 0;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.thankyou-content{
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  animation: scroll 18s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
