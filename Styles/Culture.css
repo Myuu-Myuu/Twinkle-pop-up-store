@@ -1,6 +1,37 @@
 
  /* culture */
-    main {
+.culture {
+     margin: 19px;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+   }
+
+   .st {
+     flex: 1;
+   }
+
+   .c-image {
+     flex: 1;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 6px 5px 15px 5px #d99f0b;
+   }
+
+   .c-image img {
+     width: 100%;
+     height: auto;
+     display: block;
+     transition: transform 0.5s ease;
+   }
+
+   .c-image:hover img {
+     transform: scale(1.05);
+   }
+ 
+ 
+ 
+ main {
        margin-top: 0px;
      margin-left: 50px;
      padding-bottom: 60px;
@@ -118,45 +149,45 @@
    }
 
 
+@media (max-width: 768px) {
+   
+    main {
+    margin: 0px;
+
+    }
+
+  
+    .heading {
+        font-size: 18px; 
+        letter-spacing: 1px; 
+        animation: td 1.8s ease-in-out infinite;
+      
+    }
 
 
-   main {
-     margin: 0;
-   }
+    .cg {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+       
+    }
 
+    .cd {
+        height: 400px; 
+        margin: 0px auto ;
+    }
 
-   section {
-     padding: 2px;
-   }
-
-
-   .culture {
-     margin: 19px;
+    .culture {
+   
      display: flex;
      align-items: center;
-     gap: 40px;
+     gap: 10px;
    }
-
-   .st {
-     flex: 1;
-   }
-
-   .c-image {
-     flex: 1;
-     border-radius: 10px;
-     overflow: hidden;
-     box-shadow: 6px 5px 15px 5px #d99f0b;
-   }
-
-   .c-image img {
-     width: 100%;
-     height: auto;
-     display: block;
-     transition: transform 0.5s ease;
-   }
-
-   .c-image:hover img {
-     transform: scale(1.05);
-   }
-
-   
+h1{
+  font-size: smaller;
+  
+}
+h5{
+  font-size: smaller;
+}
+    
+}
