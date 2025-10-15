@@ -59,7 +59,7 @@
     margin: 10px;
 } 
  .tab-content .card{
-    min-width: 30%;
+    min-width: 200px;
     height: fit-content;
    background: rgba(255, 255, 255, 0.02);
    box-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
@@ -67,6 +67,7 @@
     margin: 25px;
     display: flex;
     flex-direction: row; 
+    flex-wrap: wrap;
     
      
 }
@@ -99,7 +100,7 @@
     
 }
  .second-content{
-   width: 400px;
+   width: 350px;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
