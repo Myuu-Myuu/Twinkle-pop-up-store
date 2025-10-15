@@ -191,3 +191,14 @@ h5{
 }
     
 }
+
+@media{
+.cd {
+        height: 400px; 
+        margin: 0px auto ;
+    }
+ .cg {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+}
