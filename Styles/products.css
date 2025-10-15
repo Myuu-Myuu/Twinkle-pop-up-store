@@ -47,21 +47,20 @@
     /* margin-left: 10px; */
     width: auto;
     margin: 0 auto;
- 
+  justify-content: center;
     
    
 }
 
 .main-content .tab-content img{
-     /* width: 200px;
-    height: 200px; */
+    
     object-fit: cover; 
     background-color: bisque;
     border-radius: 40px;
     margin: 10px;
 } 
  .tab-content .card{
-    min-width: 200px;
+    min-width: 300px;
     height: fit-content;
    background: rgba(255, 255, 255, 0.02);
    box-shadow: 0 0 9px rgba(255, 215, 0, 0.8);
@@ -70,6 +69,7 @@
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
+   
     
      
 }
