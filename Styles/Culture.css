@@ -38,13 +38,6 @@
      overflow: hidden;
     }
      
-
-   section {
-     padding: 60px 0;
-    
-
-   }
-
    .heading {
      font-size: 40px;
      text-transform: uppercase;
@@ -192,7 +185,7 @@ h5{
     
 }
 
-@media{
+@media (max-width:1280px){
 .cd {
         height: 400px; 
         margin: 0px auto ;
