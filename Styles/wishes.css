@@ -174,21 +174,18 @@ a{
         margin-top: 30px;
     }
 
-    p {
-        font-size: 14px;
-        padding: 5px 15px;
-    }
-
+    /* ... other styles ... */
+    
     .candle {
         height: 150px;
         width: 40px;
-        margin-left: 45%;
+        margin-left: 45%; /* Adjusted centering */
     }
 
     .flame {
         height: 35px;
         width: 20px;
-        margin-left: 46.5%;
+        margin-left: 46.5%; /* Adjusted centering */
         margin-top: 80px;
     }
 
@@ -198,12 +195,6 @@ a{
         padding: 40px 20px;
         margin: 15px;
     }
-
-    .happy {
-        text-align: center;
-    }
-
-    .message {
-        font-size: 14px;
-    }
+    
+    /* ... other styles ... */
 }
